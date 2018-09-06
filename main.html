@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+    <script src='js/jquery-3.3.1.min.js'></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/echars.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- navhead -->
+        <div class="navhead">
+            
+           <div class="navheadleft">
+               <a href="#">Vali</a>
+           </div>
+
+           <div class="navheadright">
+
+                <div class="nhrl">
+                   <div class="nhrlcontainer">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </div>
+                </div>
+
+                <div class="nhrr">
+                    <div class="nhrrcontainer" >
+
+                       <div class="inputgroup">
+                          <input type="text" placeholder="搜索"><button class="fa fa-search"></button>
+                       </div>
+                       
+                       <i class="fa fa-bell-o" id="i1">
+                          <div>
+                            <div class="i1tab">
+                            
+                                <div class="i1tab_head">
+                                   <span>你有四个新提醒</span>
+                                </div>
+                            
+                                <div class="i1tab_body">
+                                  <ul>
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft">
+                                              <i class="fa fa-envelope"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                  丽萨给你发了条消息<br>
+                                                <span>两分钟前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft green">
+                                              <i class="fa fa-money"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                 交易完成<br>
+                                                <span>两天前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft red">
+                                              <i class="fa fa-server"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                  邮件服务器停止工作<br>
+                                                <span>五分钟前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft">
+                                              <i class="fa fa-envelope"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                  丽萨给你发了条消息<br>
+                                                <span>两分钟前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft green">
+                                              <i class="fa fa-money"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                 交易完成<br>
+                                                <span>两天前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            <div class="i1tab_bodyleft red">
+                                              <i class="fa fa-server"></i>
+                                            </div>
+                                            <div class="i1tab_bodyright">
+                                              <p>
+                                                  邮件服务器停止工作<br>
+                                                <span>五分钟前</span>
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </li>
+                                  </ul>
+                                </div>
+                            
+                                <div class="i1tab_feet">
+                                  <a href="">查看所有新消息</a>
+                                </div>
+                            
+                            </div>
+                          </div>
+                       </i>
+                         
+                       <i class="fa fa-user" id="i2">
+
+                            <div>
+
+                                <div class="i2tab">
+                                   <ul>
+                                       <li><i class="fa fa-cog"></i> <a href="#">设置</a></li>
+                                       <li><i class="fa fa-user"></i> <a href="#">个人</a></li>
+                                       <li><i class="fa fa-sign-out"></i> <a href="index.html">注销</a></li>
+                                   </ul>
+                 
+
+                                </div>
+
+
+                            </div>
+
+                       </i>
+
+                        
+
+                    </div>
+                </div>
+           </div>
+        </div>
+        <!-- navhead end  -->
+         <!-- body -->
+        <div class="body">
+
+           <div class="bodyleft" id="bodyleft">
+
+             <div class="bodyleft_head">
+
+                <div class="bdlh_head_left">
+                  <img src="images/nickimg.jpg" alt="">
+                </div>
+                <div class="bdlh_head_right">
+                  <p>雨空<br>
+                     <span>前端菜鸟</span>
+                  </p>
+                </div>
+
+             </div>
+
+             <div class="bodyleft_body">
+                <ul>
+                  <li>
+                    <a href="main.html"  class="active">
+                      <i class="fa fa-dashboard"></i>
+                      <span>面板</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a >
+                      <i class="fa fa-desktop"></i>
+                      <span>UI 元素</span>
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+
+                      <ul id="u1">
+                        <li><a href="https://v3.bootcss.com/css/#buttons"><i class="fa fa-circle-o"></i>&nbsp;Bootstrap 元素</a></li>
+                        <li><a href="http://www.fontawesome.com.cn/"><i class="fa fa-circle-o"></i>&nbsp;字体图标</a></li>
+                        <li><a href="https://v3.bootcss.com/components/#panels"><i class="fa fa-circle-o"></i>&nbsp;卡片</a></li>
+                        <li><a href="Widgets.html"><i class="fa fa-circle-o"></i>&nbsp;部件</a></li>
+                      </ul>
+                  </li>
+
+                  <li>
+                    <a >
+                      <i class="fa fa-pie-chart"></i>
+                      <span>图表</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a >
+                      <i class="fa fa-pencil-square-o"></i>
+                      <span>表单</span>
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+
+                     <ul id="u2">
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;表单组件</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;自定义组件</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;表单实例</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;表单提示</a></li>
+                    </ul>
+
+                  </li>
+
+                  <li>
+                    <a >
+                      <i class="fa fa-tasks"></i>
+                      <span>表格</span>
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+
+                     <ul id="u3">
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;基本表格</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;数据表格</a></li>
+                    </ul>
+
+                  </li>
+
+                  <li>
+                    <a >
+                      <i class="fa fa-file-text-o"></i>
+                      <span>页面</span>
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+
+                     <ul id="u4">
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;空白页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;登录页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;锁屏页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;个人主页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;发票页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;日历页</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;邮箱</a></li>
+                        <li><a><i class="fa fa-circle-o"></i>&nbsp;错误页</a></li>
+                    </ul>
+
+                  </li>
+
+                </ul>
+             </div>
+
+           </div>
+
+           <div class="bodyright" id="bodyright">
+
+               <div class="bodyright_navhead">
+                  <div class="headleft">
+                      <i class="fa fa-dashboard"></i>&nbsp;<span>面板</span><br>
+                      <p>免费开源boostrap4模板</p>
+                  </div>
+                  <div class="headright">
+                      <i class="fa fa-home"></i>&nbsp;/&nbsp;<a href="">面板</a>
+                  </div>
+               </div>
+
+
+             <!-- bodyright body -->
+               <div class="bodyright_body">
+                  <div class="row1">
+                    <div class="page">
+                      <div>
+                      <span class="pageleft users">
+                        <i class="fa fa-users"></i>
+                      </span>
+                      <span class="pageright">
+                        <p class="pr1">用户数</p>
+                        <p class="pr2">5</p>
+                      </span>
+                      </div>
+                    </div>
+
+                    <div class="page">
+                      <div>
+                      <span class="pageleft thumbs">
+                        <i class="fa fa-thumbs-o-up"></i>
+                      </span>
+                      <span class="pageright">
+                        <p class="pr1">点赞数</p>
+                        <p class="pr2">25</p>
+                      </span>
+                      </div>
+                    </div>
+
+                    <div class="page">
+                      <div>
+                      <span class="pageleft files">
+                        <i class="fa fa-files-o"></i>
+                      </span>
+                      <span class="pageright">
+                        <p class="pr1">上传文件数</p>
+                        <p class="pr2">10</p>
+                      </span>
+                      </div>
+                    </div>
+
+                    <div class="page">
+                      <div>
+                      <span class="pageleft star">
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="pageright">
+                        <p class="pr1">收藏</p>
+                        <p class="pr2">500</p>
+                      </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row2">
+                    <div class="row2left">
+                       <div>
+                         <div class="linechars" id="linechars">
+
+                         </div>
+                       </div>
+                    </div>
+                    <div class="row2right">
+                       <div>
+                         <div class="piechars" id="piechars">
+
+                         </div>
+                       </div>
+                    </div>
+                  </div>
+
+                  <div class="row3">
+
+                    <div class="row3left">
+                       <div>
+                         <div class="r1">
+                           <h3>特性</h3>
+                           <ul>
+                             <li>基于Boostrap4,SASS和PUG.js</li>
+                             <li>完全支持响应式和模块化代码</li>
+                             <li>七个页面包含登录，用户配置，和适合打印的发票页</li>
+                             <li>登录页面集成找回密码功能</li>
+                             <li>集成Char.js，能够展示响应式图表</li>
+                             <li>包含显示统计信息的窗口小部件</li>
+                             <li>包含具有排序，搜索和分页功能的数据包</li>
+                             <li>能够自定义如切换按钮，自动补满，标签和日历元素</li>
+                             <li>内置toast库给用户行为提供有用的响应信息</li>
+                           </ul>
+                           <p>Vail是一款基于bootstrap4,SASS和PUG.js免费的后端界面,是完全模块化和可定制化的</p>
+                           <p>Vail是一款轻量,可拓展兼具美观的界面，该主题具有后端主题需求的所有功能,但本主题
+                             的特性是用即插即用的模块构建的，请看有关自定义主题颜色和功能的<a href="">文档</a>。
+                           </p>
+                           <div>
+                             <a class="btn1" href=""><i class="fa fa-file-o"></i> Docs</a>
+                             <a class="btn2" href=""><i class="fa fa-github"></i> GitHub</a>
+                             <a class="btn3" href=""><i class="fa fa-download"></i> DownLoad</a>
+                           </div>
+                         </div>
+                       </div>
+                    </div>
+
+                    <div class="row3right">
+                       <div>
+                         <div class="r2">
+                            <h3>与框架拥有良好的兼容性</h3>
+                            <p>这个界面不是针对特定的框架或者技术(如Angular或者React等)构建的，但是由于模块化的特性
+                              很容易就可以将其嵌入到任何前端或者后端的框架中，如Angular,React或Laravel。
+                            </p>
+                            <p>请参阅<a href="">文档</a>以了解将主题与各种框架集成的更多细节</p>
+                            <p>源代码可在<a href="">GitHub</a>上下载到。如果有任何遗漏或差错，请将其在<a href="">GitHub</a>上报告为问题。
+                              如果你想为这个界面做出贡献，随时欢迎。</p>
+                         </div>
+                       </div>
+                    </div>
+
+                  </div>
+
+               </div>
+             <!-- bodyright body ned  -->
+
+
+
+
+
+           </div>
+
+        </div>
+        <!-- body end -->
+
+    </div>
+    <script>
+    $(function(){
+        /* 左边第一级菜单点击事件 */
+        
+        $('.bodyleft .bodyleft_body li').click(function(){
+        //console.log($(this).children('a').find('i').length);
+        //  if($(this).children('a').find('i').length==1){
+        //    $('.bodyleft .bodyleft_body li a').removeClass('active');
+        //    $(this).addClass('active');
+        //  }
+        //  else if($(this).children('a').find('i').length == 2){
+        //    $('.bodyleft .bodyleft_body li:eq(0) a').addClass('active');
+        //    $('.bodyleft .bodyleft_body li:gt(0) a').removeClass('active');
+        //    $(this).find('a').addClass('active');
+        //  }
+        
+        if($(this).children('a').find('i').length == 1){
+          $('.bodyleft .bodyleft_body li a').removeClass('active');
+          $(this).find('a').addClass('active');
+        }
+        else if ($(this).children('a').find('i').length == 2){
+          $('.bodyleft .bodyleft_body li:gt(0) a').removeClass('active');
+          $(this).find('a').addClass('active');
+        }
+
+        if($(this).hasClass('active')==false){
+          $('.bodyleft .bodyleft_body li').removeClass('active');
+
+          $(this).addClass('active');
+          $('.bodyleft .bodyleft_body li>ul').removeClass('active');
+          $(this).find('ul').addClass('active');
+        }
+        else{
+          $(this).removeClass('active');
+          $('.bodyleft .bodyleft_body li>ul').removeClass('active');
+        }
+      });
+       /* 左边第一级菜单点击事件 结束 */
+
+       /* 左边第二级点击事件*/
+       $('.bodyleft .bodyleft_body li>ul>li>a').click(function(e){
+         //e.stopPropagation();
+         $('.bodyleft .bodyleft_body li>ul>li>a').css({
+           'background-color':'#2A383E'
+         });
+         $(this).css({
+           'background-color': '#0D1214'
+         })
+         
+       });
+       /* 左边第二级点击事件 结束 */
+      
+      /* 左边缩小以后 */
+      // $('#bodyleft.active .bodyleft_body>ul>li').on({mousein:function(){
+      //   alert(11);
+      //   // $(this).find('span').addClass('active');
+      //   // console.log(a);
+      // },mouseout:function(){
+      //   // $(this).find('span').removeClass('active');          
+      // }});
+      $('.body').on('mouseenter mouseleave','#bodyleft.active .bodyleft_body>ul>li',function(){//事件代理
+         $(this).find('span').toggleClass('active');
+         $(this).find('ul').toggleClass('active');
+      });
+      /* 左边缩小以后 结束 */
+      
+
+
+        $('.nhrlcontainer').click(function () {
+            $(this).toggleClass('active');
+            $('#bodyleft').toggleClass('active');
+            $('#bodyright').toggleClass('active');
+            
+        });
+    
+        $('#i1').click(function(){
+            $('#i1>div').toggleClass('active');
+            $('#i2>div').removeClass('active');
+        });
+
+        $('#i2').click(function () {
+            $('#i2>div').toggleClass('active');
+            $('#i1>div').removeClass('active');
+        });
+
+
+
+
+
+//line
+  var linechars = document.getElementById('linechars');
+  var myChart = echarts.init(linechars);
+  var xAxisData = [];
+  var data1 = [];
+  var data2 = [];
+  for (var i = 0; i < 100; i++) {
+        xAxisData.push('类目' + i);
+        data1.push((Math.sin(i / 5) * (i / 5 - 10) + i / 6) * 5);
+        data2.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
+      }
+  var  option1 = {
+        title: {
+          text: '柱状图动画延迟'
+        },
+        legend: {
+          data: ['bar', 'bar2'],
+          align: 'left'
+        },
+        toolbox: {
+          // y: 'bottom',
+          feature: {
+            magicType: {
+              type: ['stack', 'tiled']
+            },
+            dataView: {},
+            saveAsImage: {
+              pixelRatio: 2
+            }
+          }
+        },
+        tooltip: {},
+        xAxis: {
+          data: xAxisData,
+          silent: false,
+          splitLine: {
+            show: false
+          }
+        },
+        yAxis: {
+        },
+        series: [{
+          name: 'bar',
+          type: 'bar',
+          data: data1,
+          animationDelay: function (idx) {
+            return idx * 10;
+          }
+        }, {
+          name: 'bar2',
+          type: 'bar',
+          data: data2,
+          animationDelay: function (idx) {
+            return idx * 10 + 100;
+          }
+        }],
+        animationEasing: 'elasticOut',
+        animationDelayUpdate: function (idx) {
+          return idx * 5;
+        }
+      };
+  myChart.setOption(option1);
+//line end
+ //pie
+  var piechars = document.getElementById('piechars');
+  var myChart1 = echarts.init(piechars);
+  var option = {
+    backgroundColor: '#fff',
+
+    title: {
+        text: '饼图',
+        left: 'center',
+        top: 20,
+        textStyle: {
+            color: '#0c2926'
+        }
+    },
+
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+
+    visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+            colorLightness: [0, 1]
+        }
+    },
+    series : [
+        {
+            name:'访问来源',
+            type:'pie',
+            radius : '55%',
+            center: ['50%', '50%'],
+            data:[
+                {value:335, name:'直接访问',itemStyle: {color:'#FFFFCC'}},
+                {value:310, name:'邮件营销',itemStyle: { color: '#CCFFFF' }},
+                {value:274, name:'联盟广告',itemStyle: { color: '#6699CC' }},
+                {value:235, name:'视频广告',itemStyle: { color: '#99CCCC' }},
+                {value:400, name:'搜索引擎',itemStyle: { color: '#FFCCCC' }}
+            ].sort(function (a, b) { return a.value - b.value; }),
+            roseType: 'radius',
+            label: {
+                normal: {
+                    textStyle: {
+                        color: '#212529'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    lineStyle: {
+                        color: 'rgba(0, 0, 0, 0.7)'
+                    },
+                    smooth: 0.2,
+                    length: 10,
+                    length2: 20
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#c23531',
+                    shadowBlur: 10,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            },
+
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }
+    ]
+   }; 
+  myChart1.setOption(option);
+  window.onresize=function(){
+  myChart1.resize();//重定以画布大小
+  myChart.resize();
+}
+//pie end
+
+
+  
+
+
+
+ 
+// var resizeWorldMapContainer = function () {//用于使chart自适应高度和宽度,通过窗体高宽计算容器高宽
+//     piechars.style.width = piechars.innerWidth+'px';
+//     piechars.style.height = piechars.innerHeight+'px';
+// };
+ 
+
+ 
+ 
+// var myChart = echarts.init(piechars);// 基于准备好的dom，初始化echarts实例
+
+//       piechars.onresize = function () {//用于使chart自适应高度和宽度
+
+//         resizeWorldMapContainer();//重置容器高宽
+//         piechars.resize();
+//       };
+
+//       resizeWorldMapContainer();//设置容器高宽
+
+
+
+
+
+
+    });
+     
+    </script>
+</body>
+</html>

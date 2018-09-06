@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Niconne);
+/* 通过谷歌调用 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body{
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #666;
+    font-weight: 700;
+}
+h1{
+    font-family: inherit;
+}
+.containerbg{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.containerbg .bg1,.containerbg .bg2{
+    height: 50%;
+}
+.bg1{
+    background-color: #009587;
+}
+.bg2{
+    background-color: #E7E7E7;
+}
+.denglv{
+    position: absolute;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.denglv h1{
+    font-size: 52px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: Niconne;
+}
+.denglv .denglvjiemian{
+    width:350px;
+    height: 390px;
+    background-color: #fff;
+    box-shadow: 0px 1px 90px 2px rgb(129, 129, 129);
+    padding: 40px;
+}
+.denglvjiemian h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 700;
+    color:rgb(33, 37, 41);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.denglvjiemian h2 i{
+    font-size: 40px;
+    vertical-align: middle;
+}
+.denglvjiemian .inputgroup{
+    margin-bottom: 20px;
+}
+.denglvjiemian .inputgroup h3{
+    margin-bottom: 8px;
+}
+.denglvjiemian .inputgroup input{
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: 2px solid rgb(206, 212, 218);
+    padding-left: 13px;
+    transition: 0.3s;
+}
+.denglvjiemian .inputgroup input:focus{
+    border-color: #009688;
+    outline: none;
+}
+.denglvjiemian .keepsingin{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.denglvjiemian .keepsingin a{
+    color: #009587;
+    text-decoration: none;
+    font-weight: 600;
+}
+.denglvjiemian .keepsingin a:hover{
+    text-decoration: underline;
+}
+.denglvjiemian .keepsingin label{
+    cursor: pointer;
+}
+.denglvjiemian .keepsingin input[type="checkbox"]{
+    vertical-align: middle;
+    background-color:#fff;
+}
+.denglvjiemian .btn{
+    display: block;
+    width: 100%;
+    background-color: #009587;
+    border:1px solid #009587;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 700;
+    line-height: 40px;
+    transition: 0.4s;
+}
+.denglvjiemian .btn:hover{
+    background-color: #007065;
+    border-color: #00635A;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px 0px #666;
+}
